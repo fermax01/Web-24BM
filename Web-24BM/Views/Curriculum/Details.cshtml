@@ -1,0 +1,130 @@
+﻿@model Web_24BM.Models.Curriculum
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Detalles Curriculum</title>
+    <style>
+        body {
+            background-color: #007BFF;
+            color: #fff;
+        }
+
+        .card {
+            background-color: #fff;
+            color: #000;
+        }
+
+        .social-icon {
+            font-size: 24px;
+            margin-right: 8px;
+        }
+
+        .experience, .education, .programming-languages, .projects {
+            background-color: #fff;
+            color: #000;
+            margin-top: 20px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .progress-bar {
+            background-color: #28a745;
+        }
+
+        .project-image {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card">
+                    <img src="~/Archivos/@Model.NombreFoto" class="card-img-top rounded-circle mx-auto mt-3" width="160" height="160" alt="Foto de perfil">
+                    <div class="card-body">
+                        <h5 class="card-title">@Model.Nombre @Model.Apellidos</h5>
+                        <p class="card-text">@Model.DatosLaboral</p>
+                        <p class="card-text">Descripcion</p>
+                    </div>
+                    <hr class="my-4">
+                    <div class="card-body">
+                        <p class="card-text">
+                            <span class="social-icon">&#x1F517;</span>Red Social
+                            <span class="float-right social-icon">&#x1F4F1;</span>Página Web
+                            <span class="float-right social-icon mr-2">&#x260E;</span>Número Teléfono
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div class="experience">
+                    <div class="card-header">
+                        <h5 class="card-title">Experiencia Laboral</h5>
+                    </div>
+                    <div class="card-body">
+                        <!-- Add experience details here -->
+                    </div>
+                </div>
+                <div class="education">
+                    <div class="card-header">
+                        <h5 class="card-title">Educación</h5>
+                    </div>
+                    <div class="card-body">
+                        <!-- Add education details here -->
+                    </div>
+                </div>
+                <div class="programming-languages">
+                    <div class="card-header">
+                        <h5 class="card-title">Habilidades de Programación</h5>
+                    </div>
+                    <div class="card-body">
+                        <!-- Add programming language proficiency statistics here -->
+                        <div class="progress mb-3">
+                            <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">Java</div>
+                        </div>
+                        <div class="progress mb-3">
+                            <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">JavaScript</div>
+                        </div>
+                        <!-- Add more programming languages as needed -->
+                    </div>
+                </div>
+                <div class="projects">
+                    <div class="card-header">
+                        <h5 class="card-title">Proyectos Destacados</h5>
+                    </div>
+                    <div class="card-body">
+                        <!-- Add images showcasing works (replace placeholders) -->
+                        <div class="row">
+                            <div class="col-md-3 mb-3">
+                                <img src="~/Proyectos/Proyecto1.jpg" class="project-image" alt="Proyecto 1">
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <img src="~/Proyectos/Proyecto2.jpg" class="project-image" alt="Proyecto 2">
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <img src="~/Proyectos/Proyecto3.jpg" class="project-image" alt="Proyecto 3">
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <img src="~/Proyectos/Proyecto4.jpg" class="project-image" alt="Proyecto 4">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

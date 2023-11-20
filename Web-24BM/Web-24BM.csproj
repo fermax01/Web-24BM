@@ -1,0 +1,48 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>aspnet-Web_24BM-b6f3e64b-f7c7-4991-81a7-614e9cc25b00</UserSecretsId>
+    <RootNamespace>Web_24BM</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="Views\Curriculum\Curriculum.cshtml" />
+    <Content Remove="Views\Curriculum\Editar.cshtml" />
+    <Content Remove="wwwroot\Archivos\anuncio2.jpg" />
+    <Content Remove="wwwroot\Archivos\anuncio3.webp" />
+    <Content Remove="wwwroot\Archivos\anuncio4.jpg" />
+    <Content Remove="wwwroot\Archivos\anuncio6.jpg" />
+    <Content Remove="wwwroot\Archivos\blog1.jpg" />
+    <Content Remove="wwwroot\Archivos\blog4.jpg" />
+    <Content Remove="wwwroot\Archivos\carlos.jpg" />
+    <Content Remove="wwwroot\Archivos\charles.webp" />
+    <Content Remove="wwwroot\Archivos\checo.webp" />
+    <Content Remove="wwwroot\Archivos\destacada.webp" />
+    <Content Remove="wwwroot\Archivos\destacada3.webp" />
+    <Content Remove="wwwroot\Archivos\encuentra.jpg" />
+    <Content Remove="wwwroot\Archivos\header.webp" />
+    <Content Remove="wwwroot\Archivos\nosotros.jpg" />
+    <Content Remove="wwwroot\Archivos\nosotros.webp" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.3.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="7.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="7.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.11">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="7.0.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\Archivos\" />
+  </ItemGroup>
+
+</Project>
